@@ -49,6 +49,9 @@ const NavBar = ({ logout}) => {
             <NavItem>
               <NavLink href="/myProfile" active={pathname==="/myProfile"}>Profile</NavLink>
             </NavItem>
+            <NavItem>
+              <NavLink href="/myEducation" active={pathname==="/myEducation"}>Education</NavLink>
+            </NavItem>
             <UncontrolledDropdown nav inNavbar setActiveFromChild>
               <DropdownToggle nav caret>
                 Options

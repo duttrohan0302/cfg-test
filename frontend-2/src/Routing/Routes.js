@@ -9,6 +9,8 @@ import PrivateRoute from './PrivateRoute';
 import DefaultLayoutRoute from './DefaultLayout';
 import DashBoard from '../Components/DashBoard';
 import NotFound from '../Components/NotFound';
+import Myprofile from '../Components/Myprofile';
+import Myeducation from '../Components/Myeducation';
 
 
 const Routes = ({auth,isAuthenticated}) => {
@@ -18,6 +20,8 @@ const Routes = ({auth,isAuthenticated}) => {
         <DefaultLayoutRoute exact path="/register" component={Register} />
         <DefaultLayoutRoute exact path="/login" component={Login} />
         <PrivateRoute exact path="/dashboard" component={DashBoard} />
+        <PrivateRoute exact path="/myProfile" component={Myprofile} />
+        <PrivateRoute exact path="/myEducation" component={Myeducation} />
         {/* <PrivateRoute exact path="/myProfile" component={DashBoard} /> */}
 
         {
