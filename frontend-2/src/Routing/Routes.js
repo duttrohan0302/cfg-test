@@ -11,7 +11,7 @@ import DashBoard from '../Components/DashBoard';
 import NotFound from '../Components/NotFound';
 import Myprofile from '../Components/Myprofile';
 import Myeducation from '../Components/Myeducation';
-
+import Mydetails from '../Components/Mydetails';
 
 const Routes = ({auth,isAuthenticated}) => {
   return (
@@ -22,6 +22,7 @@ const Routes = ({auth,isAuthenticated}) => {
         <PrivateRoute exact path="/dashboard" component={DashBoard} />
         <PrivateRoute exact path="/myProfile" component={Myprofile} />
         <PrivateRoute exact path="/myEducation" component={Myeducation} />
+        <PrivateRoute exact path="/myDetails" component={Mydetails} />
         {/* <PrivateRoute exact path="/myProfile" component={DashBoard} /> */}
 
         {
