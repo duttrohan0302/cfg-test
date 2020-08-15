@@ -12,6 +12,8 @@ import NotFound from '../Components/NotFound';
 import Myprofile from '../Components/Myprofile';
 import Myeducation from '../Components/Myeducation';
 import Mydetails from '../Components/Mydetails';
+import Projectindex from '../Components/Projectindex';
+
 
 const Routes = ({auth,isAuthenticated}) => {
   return (
@@ -23,6 +25,7 @@ const Routes = ({auth,isAuthenticated}) => {
         <PrivateRoute exact path="/myProfile" component={Myprofile} />
         <PrivateRoute exact path="/myEducation" component={Myeducation} />
         <PrivateRoute exact path="/myDetails" component={Mydetails} />
+        <PrivateRoute exact path="/projectIndex" component={Projectindex} />
         {/* <PrivateRoute exact path="/myProfile" component={DashBoard} /> */}
 
         {

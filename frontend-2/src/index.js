@@ -14,7 +14,26 @@ import './assets/css/fontawesome-all.min.css';
 import './assets/css/themify-icons.css';
 import './assets/css/slick.css';
 import './assets/css/nice-select.css';
-import './assets/css/style.css';
+//
+// import './assets/js/vendor/modernizr-3.5.0.min.js';
+// import './assets/js/vendor/jquery-1.12.4.min.js';
+// import './assets/js/popper.min.js';
+// import './assets/js/bootstrap.min.js';
+// // import './assets/js/jquery.slicknav.min.js';
+// import './assets/js/owl.carousel.min.js';
+// // import './assets/js/slick.min.js';
+// import './assets/js/wow.min.js';
+// import './assets/js/animated.headline.js';
+// // import './assets/js/jquery.magnific-popup.js';
+// // import './assets/js/jquery.nice-select.min.js';
+// // import './assets/js/jquery.sticky.js';
+// import './assets/js/contact.js';
+// // import './assets/js/jquery.form.js';
+// // import './assets/js/jquery.validate.min.js';
+// import './assets/js/mail-script.js';
+// // import './assets/js/jquery.ajaxchimp.min.js';
+// import './assets/js/plugins.js';
+// import './assets/js/main.js';
 
 
 ReactDOM.render(
