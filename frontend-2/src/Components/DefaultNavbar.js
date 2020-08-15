@@ -35,7 +35,7 @@ const DefaultNavbar = (props) => {
             <NavItem>
               <NavLink href="/register" active={pathname==='/register'}>Register</NavLink>
             </NavItem>
-            
+
           </Nav>
         </Collapse>
       </Navbar>
