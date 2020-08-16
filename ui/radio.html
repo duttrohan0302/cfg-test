@@ -1,0 +1,629 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>Patiala.City | Radio</title>
+<meta name="description" content="Patiala.city is an community platform made with only one agenda in mind, to give the residents of this city and tourists a chance to explore what this city has to offer in it's entirety. This app will be a hub for all services available in Patiala such as hotel information, event calendar and portal, job vacancies whereas it'll also serve as a social media platform made exclusively for the people in the city with it's blogs, podcasts, radio and news being completely Patiala centric.">
+<link href="https://fonts.googleapis.com/css?family=Poppins:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Roboto:300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="styles/style.css">
+<link rel="stylesheet" type="text/css" href="styles/framework.css">
+<link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+</head>
+
+<body class="theme-light"  data-highlight="blue2">
+
+<div id="page">
+
+    <div id="page-preloader">
+        <div class="loader-main">
+          <div class="preload-spinner border-highlight"></div>
+        </div>
+    </div>
+
+    <div class="page-content">
+      <div data-height="130" class="page-title-bg bg-20"><!-- image --></div>
+      <div data-height="130" class="page-title-bg dark-mode-tint"><!-- contrast for dark mode --></div>
+      <div data-height="130" class="page-title-bg opacity-90 bg-highlight"><!-- background color --></div>
+
+      <div class="page-title-small color-white bottom-30">
+          <h1><i class="fa fa-arrow-left back-button"></i>Radio (Beta Version)</h1>
+      </div>
+
+      <div class="content" style="margin:15px; display:none;" id="RadioDiv">
+          <iframe id="RadioPlayer" src="" type="text/html" width=100% height=100% frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="content" style="margin:15px;" id="RadioInfo">
+          <div id="player" data-height="100" class="caption round-medium shadow-large bg-theme" style="margin-bottom:15px;">
+              <div class="caption-center">
+                  <h1 class="left-20 top-10">
+                    <i data-feather="play"
+                       data-feather-line="1"
+                       data-feather-size="45"
+                       data-feather-color="red2-dark"
+                       data-feather-bg="red2-fade-light">
+                    </i>
+                  </h1>
+              </div>
+              <div class="caption-center">
+                  <h4 class="color-theme left-90 top-30">Patiala.City Radio</h4>
+                  <p class="under-heading color-highlight font-11 color-highlight left-90">
+                      Please Select a Channel to Stream
+                  </p>
+              </div>
+          </div>
+      </div>
+
+      <div class="single-slider slider-full owl-no-dots owl-carousel">
+          <div class="caption round-medium">
+              <div class="caption top-10 bottom-0 center-text">
+                  <h2 class="bolder font-18">Devotional</h2>
+                  <div class="content">
+                    <div class="one-half">
+                      <div onclick="PlayRadio('D1')" data-height="150" class="caption round-medium shadow-large bg-theme bottom-15">
+                            <div class="caption-center">
+                                <h1 class="center-text">
+                                  <img src="images/radio/RadioSai_Bhajan.png" style="height:50px;">
+                                </h1>
+                                <h4 class="center-text color-theme">Radio Sai</h4>
+                                <p class="under-heading color-highlight center-text font-11 color-highlight">
+                                    Bhajan Stream
+                                </p>
+                            </div>
+                            <div class="caption-bottom">
+                                <p class="bottom-10 opacity-40 font-10 center-text">Tap to Start</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="one-half last-column">
+                      <div onclick="PlayRadio('D3')" data-height="150" class="caption round-medium shadow-large bg-theme bottom-15">
+                          <div class="caption-center">
+                              <h1 class="center-text">
+                                <i data-feather="play"
+                                   data-feather-line="1"
+                                   data-feather-size="45"
+                                   data-feather-color="red2-dark"
+                                   data-feather-bg="red2-fade-light">
+                                </i>
+                              </h1>
+                              <h4 class="center-text color-theme">Live Kirtan</h4>
+                              <p class="under-heading color-highlight center-text font-11 color-highlight">
+                                  Sri Harmandir Sahib
+                              </p>
+                          </div>
+                          <div class="caption-bottom">
+                              <p class="bottom-10 opacity-40 font-10 center-text">Tap to Start</p>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="clear"></div>
+                    <div class="one-half">
+                      <div onclick="PlayRadio('D2')" data-height="150" class="caption round-medium shadow-large bg-theme bottom-15">
+                          <div class="caption-center">
+                              <h1 class="center-text">
+                                <img src="images/radio/RadioSai_Asia.png" style="height:50px;">
+                              </h1>
+                              <h4 class="center-text color-theme">Radio Sai</h4>
+                              <p class="under-heading color-highlight center-text font-11 color-highlight">
+                                  Asia Stream
+                              </p>
+                          </div>
+                          <div class="caption-bottom">
+                              <p class="bottom-10 opacity-40 font-10 center-text">Tap to Start</p>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="one-half last-column">
+                      <div onclick="PlayRadio('D4')" data-height="150" class="caption round-medium shadow-large bg-theme bottom-15">
+                          <div class="caption-center">
+                              <h1 class="center-text">
+                                <i data-feather="play"
+                                   data-feather-line="1"
+                                   data-feather-size="45"
+                                   data-feather-color="red2-dark"
+                                   data-feather-bg="red2-fade-light">
+                                </i>
+                              </h1>
+                              <h4 class="center-text color-theme">Sukhsagar</h4>
+                              <p class="under-heading color-highlight center-text font-11 color-highlight">
+                                  24 hrs Gurbani
+                              </p>
+                          </div>
+                          <div class="caption-bottom">
+                              <p class="bottom-10 opacity-40 font-10 center-text">Tap to Start</p>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+          <div class="caption round-medium">
+              <div class="caption top-10 bottom-0 center-text">
+                  <h2 class="bolder font-18">News</h2>
+                  <div class="content">
+                    <div class="one-half">
+                      <div onclick="PlayRadio('N1')" data-height="150" class="caption round-medium shadow-large bg-theme bottom-15">
+                            <div class="caption-center">
+                                <h1 class="center-text">
+                                  <i data-feather="play"
+                                     data-feather-line="1"
+                                     data-feather-size="45"
+                                     data-feather-color="red2-dark"
+                                     data-feather-bg="red2-fade-light">
+                                  </i>
+                                </h1>
+                                <h4 class="center-text color-theme">All India Radio</h4>
+                                <p class="under-heading color-highlight center-text font-11 color-highlight">
+                                    Akashwani India
+                                </p>
+                            </div>
+                            <div class="caption-bottom">
+                                <p class="bottom-10 opacity-40 font-10 center-text">Tap to Start</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="one-half last-column">
+                      <div onclick="PlayRadio('N3')" data-height="150" class="caption round-medium shadow-large bg-theme bottom-15">
+                          <div class="caption-center">
+                              <h1 class="center-text">
+                                <i data-feather="play"
+                                   data-feather-line="1"
+                                   data-feather-size="45"
+                                   data-feather-color="red2-dark"
+                                   data-feather-bg="red2-fade-light">
+                                </i>
+                              </h1>
+                              <h4 class="center-text color-theme">Aaj Tak</h4>
+                              <p class="under-heading color-highlight center-text font-11 color-highlight">
+                                  Live Stream
+                              </p>
+                          </div>
+                          <div class="caption-bottom">
+                              <p class="bottom-10 opacity-40 font-10 center-text">Tap to Start</p>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="clear"></div>
+                    <div class="one-half">
+                      <div onclick="PlayRadio('N2')" data-height="150" class="caption round-medium shadow-large bg-theme bottom-15">
+                          <div class="caption-center">
+                              <h1 class="center-text">
+                                <i data-feather="play"
+                                   data-feather-line="1"
+                                   data-feather-size="45"
+                                   data-feather-color="red2-dark"
+                                   data-feather-bg="red2-fade-light">
+                                </i>
+                              </h1>
+                              <h4 class="center-text color-theme">All India Radio</h4>
+                              <p class="under-heading color-highlight center-text font-11 color-highlight">
+                                  Akashwani Patiala
+                              </p>
+                          </div>
+                          <div class="caption-bottom">
+                              <p class="bottom-10 opacity-40 font-10 center-text">Tap to Start</p>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="one-half last-column">
+                      <div onclick="PlayRadio('N4')" data-height="150" class="caption round-medium shadow-large bg-theme bottom-15">
+                          <div class="caption-center">
+                              <h1 class="center-text">
+                                <i data-feather="play"
+                                   data-feather-line="1"
+                                   data-feather-size="45"
+                                   data-feather-color="red2-dark"
+                                   data-feather-bg="red2-fade-light">
+                                </i>
+                              </h1>
+                              <h4 class="center-text color-theme">NDTV</h4>
+                              <p class="under-heading color-highlight center-text font-11 color-highlight">
+                                  24x7 Live Stream
+                              </p>
+                          </div>
+                          <div class="caption-bottom">
+                              <p class="bottom-10 opacity-40 font-10 center-text">Tap to Start</p>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+          <div class="caption round-medium">
+              <div class="caption top-10 bottom-0 center-text">
+                  <h2 class="bolder font-18">Punjabi</h2>
+                  <div class="content">
+                    <div class="one-half">
+                      <div onclick="PlayRadio('PB1')" data-height="150" class="caption round-medium shadow-large bg-theme bottom-15">
+                            <div class="caption-center">
+                                <h1 class="center-text">
+                                  <i data-feather="play"
+                                     data-feather-line="1"
+                                     data-feather-size="45"
+                                     data-feather-color="red2-dark"
+                                     data-feather-bg="red2-fade-light">
+                                  </i>
+                                </h1>
+                                <h4 class="center-text color-theme">Punjabi Today</h4>
+                                <p class="under-heading color-highlight center-text font-11 color-highlight">
+                                    Bathinda
+                                </p>
+                            </div>
+                            <div class="caption-bottom">
+                                <p class="bottom-10 opacity-40 font-10 center-text">Tap to Start</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="one-half last-column">
+                      <div onclick="PlayRadio('PB3')" data-height="150" class="caption round-medium shadow-large bg-theme bottom-15">
+                          <div class="caption-center">
+                              <h1 class="center-text">
+                                <i data-feather="play"
+                                   data-feather-line="1"
+                                   data-feather-size="45"
+                                   data-feather-color="red2-dark"
+                                   data-feather-bg="red2-fade-light">
+                                </i>
+                              </h1>
+                              <h4 class="center-text color-theme">Radio Punjabi</h4>
+                              <p class="under-heading color-highlight center-text font-11 color-highlight">
+                                  United Kingdom
+                              </p>
+                          </div>
+                          <div class="caption-bottom">
+                              <p class="bottom-10 opacity-40 font-10 center-text">Tap to Start</p>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="clear"></div>
+                    <div class="one-half">
+                      <div onclick="PlayRadio('PB2')" data-height="150" class="caption round-medium shadow-large bg-theme bottom-15">
+                          <div class="caption-center">
+                              <h1 class="center-text">
+                                <i data-feather="play"
+                                   data-feather-line="1"
+                                   data-feather-size="45"
+                                   data-feather-color="red2-dark"
+                                   data-feather-bg="red2-fade-light">
+                                </i>
+                              </h1>
+                              <h4 class="center-text color-theme">Radio City</h4>
+                              <p class="under-heading color-highlight center-text font-11 color-highlight">
+                                  Punjabi Stream
+                              </p>
+                          </div>
+                          <div class="caption-bottom">
+                              <p class="bottom-10 opacity-40 font-10 center-text">Tap to Start</p>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="one-half last-column">
+                      <div onclick="PlayRadio('PB4')" data-height="150" class="caption round-medium shadow-large bg-theme bottom-15">
+                          <div class="caption-center">
+                              <h1 class="center-text">
+                                <i data-feather="play"
+                                   data-feather-line="1"
+                                   data-feather-size="45"
+                                   data-feather-color="red2-dark"
+                                   data-feather-bg="red2-fade-light">
+                                </i>
+                              </h1>
+                              <h4 class="center-text color-theme">Punjabi Songs</h4>
+                              <p class="under-heading color-highlight center-text font-11 color-highlight">
+                                  24x7 Stream
+                              </p>
+                          </div>
+                          <div class="caption-bottom">
+                              <p class="bottom-10 opacity-40 font-10 center-text">Tap to Start</p>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+          <div class="caption round-medium">
+              <div class="caption top-10 bottom-0 center-text">
+                  <h2 class="bolder font-18">English</h2>
+                  <div class="content">
+                    <div class="one-half">
+                      <div onclick="PlayRadio('ENG1')" data-height="150" class="caption round-medium shadow-large bg-theme bottom-15">
+                            <div class="caption-center">
+                                <h1 class="center-text">
+                                  <i data-feather="play"
+                                     data-feather-line="1"
+                                     data-feather-size="45"
+                                     data-feather-color="red2-dark"
+                                     data-feather-bg="red2-fade-light">
+                                  </i>
+                                </h1>
+                                <h4 class="center-text color-theme">Radio 538</h4>
+                                <p class="under-heading color-highlight center-text font-11 color-highlight">
+                                    Amsterdam
+                                </p>
+                            </div>
+                            <div class="caption-bottom">
+                                <p class="bottom-10 opacity-40 font-10 center-text">Tap to Start</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="one-half last-column">
+                      <div onclick="PlayRadio('ENG2')" data-height="150" class="caption round-medium shadow-large bg-theme bottom-15">
+                          <div class="caption-center">
+                              <h1 class="center-text">
+                                <i data-feather="play"
+                                   data-feather-line="1"
+                                   data-feather-size="45"
+                                   data-feather-color="red2-dark"
+                                   data-feather-bg="red2-fade-light">
+                                </i>
+                              </h1>
+                              <h4 class="center-text color-theme">Charts</h4>
+                              <p class="under-heading color-highlight center-text font-11 color-highlight">
+                                  Germany
+                              </p>
+                          </div>
+                          <div class="caption-bottom">
+                              <p class="bottom-10 opacity-40 font-10 center-text">Tap to Start</p>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+          <div class="caption round-medium">
+              <div class="caption top-10 bottom-0 center-text">
+                  <h2 class="bolder font-18">Entertainment</h2>
+                  <div class="content">
+                    <div class="one-half">
+                      <div onclick="PlayRadio('E1')" data-height="150" class="caption round-medium shadow-large bg-theme bottom-15">
+                            <div class="caption-center">
+                                <h1 class="center-text">
+                                  <i data-feather="play"
+                                     data-feather-line="1"
+                                     data-feather-size="45"
+                                     data-feather-color="red2-dark"
+                                     data-feather-bg="red2-fade-light">
+                                  </i>
+                                </h1>
+                                <h4 class="center-text color-theme">92.7 BIG FM</h4>
+                                <p class="under-heading color-highlight center-text font-11 color-highlight">
+                                    Live
+                                </p>
+                            </div>
+                            <div class="caption-bottom">
+                                <p class="bottom-10 opacity-40 font-10 center-text">Tap to Start</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="one-half last-column">
+                      <div onclick="PlayRadio('E3')" data-height="150" class="caption round-medium shadow-large bg-theme bottom-15">
+                          <div class="caption-center">
+                              <h1 class="center-text">
+                                <i data-feather="play"
+                                   data-feather-line="1"
+                                   data-feather-size="45"
+                                   data-feather-color="red2-dark"
+                                   data-feather-bg="red2-fade-light">
+                                </i>
+                              </h1>
+                              <h4 class="center-text color-theme">Radio City</h4>
+                              <p class="under-heading color-highlight center-text font-11 color-highlight">
+                                  Live
+                              </p>
+                          </div>
+                          <div class="caption-bottom">
+                              <p class="bottom-10 opacity-40 font-10 center-text">Tap to Start</p>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="clear"></div>
+                    <div class="one-half">
+                      <div onclick="PlayRadio('E2')" data-height="150" class="caption round-medium shadow-large bg-theme bottom-15">
+                          <div class="caption-center">
+                              <h1 class="center-text">
+                                <i data-feather="play"
+                                   data-feather-line="1"
+                                   data-feather-size="45"
+                                   data-feather-color="red2-dark"
+                                   data-feather-bg="red2-fade-light">
+                                </i>
+                              </h1>
+                              <h4 class="center-text color-theme">Vividh Bhatri</h4>
+                              <p class="under-heading color-highlight center-text font-11 color-highlight">
+                                  Live
+                              </p>
+                          </div>
+                          <div class="caption-bottom">
+                              <p class="bottom-10 opacity-40 font-10 center-text">Tap to Start</p>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="one-half last-column">
+                      <div onclick="PlayRadio('E4')" data-height="150" class="caption round-medium shadow-large bg-theme bottom-15">
+                          <div class="caption-center">
+                              <h1 class="center-text">
+                                <i data-feather="play"
+                                   data-feather-line="1"
+                                   data-feather-size="45"
+                                   data-feather-color="red2-dark"
+                                   data-feather-bg="red2-fade-light">
+                                </i>
+                              </h1>
+                              <h4 class="center-text color-theme">Radio Masala</h4>
+                              <p class="under-heading color-highlight center-text font-11 color-highlight">
+                                  Live
+                              </p>
+                          </div>
+                          <div class="caption-bottom">
+                              <p class="bottom-10 opacity-40 font-10 center-text">Tap to Start</p>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+          <div class="caption round-medium">
+              <div class="caption top-10 bottom-0 center-text">
+                  <h2 class="bolder font-18">Entertainment</h2>
+                  <div class="content">
+                    <div class="one-half">
+                      <div onclick="PlayRadio('E5')" data-height="150" class="caption round-medium shadow-large bg-theme bottom-15">
+                            <div class="caption-center">
+                                <h1 class="center-text">
+                                  <i data-feather="play"
+                                     data-feather-line="1"
+                                     data-feather-size="45"
+                                     data-feather-color="red2-dark"
+                                     data-feather-bg="red2-fade-light">
+                                  </i>
+                                </h1>
+                                <h4 class="center-text color-theme">Non Stop</h4>
+                                <p class="under-heading color-highlight center-text font-11 color-highlight">
+                                    Hindi Stream
+                                </p>
+                            </div>
+                            <div class="caption-bottom">
+                                <p class="bottom-10 opacity-40 font-10 center-text">Tap to Start</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="one-half last-column">
+                      <div onclick="PlayRadio('E7')" data-height="150" class="caption round-medium shadow-large bg-theme bottom-15">
+                          <div class="caption-center">
+                              <h1 class="center-text">
+                                <i data-feather="play"
+                                   data-feather-line="1"
+                                   data-feather-size="45"
+                                   data-feather-color="red2-dark"
+                                   data-feather-bg="red2-fade-light">
+                                </i>
+                              </h1>
+                              <h4 class="center-text color-theme">Gazals</h4>
+                              <p class="under-heading color-highlight center-text font-11 color-highlight">
+                                  Live
+                              </p>
+                          </div>
+                          <div class="caption-bottom">
+                              <p class="bottom-10 opacity-40 font-10 center-text">Tap to Start</p>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="clear"></div>
+                    <div class="one-half">
+                      <div onclick="PlayRadio('E6')" data-height="150" class="caption round-medium shadow-large bg-theme bottom-15">
+                          <div class="caption-center">
+                              <h1 class="center-text">
+                                <i data-feather="play"
+                                   data-feather-line="1"
+                                   data-feather-size="45"
+                                   data-feather-color="red2-dark"
+                                   data-feather-bg="red2-fade-light">
+                                </i>
+                              </h1>
+                              <h4 class="center-text color-theme">90's Again</h4>
+                              <p class="under-heading color-highlight center-text font-11 color-highlight">
+                                  Live
+                              </p>
+                          </div>
+                          <div class="caption-bottom">
+                              <p class="bottom-10 opacity-40 font-10 center-text">Tap to Start</p>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="one-half last-column">
+                      <div onclick="PlayRadio('E8')" data-height="150" class="caption round-medium shadow-large bg-theme bottom-15">
+                          <div class="caption-center">
+                              <h1 class="center-text">
+                                <i data-feather="play"
+                                   data-feather-line="1"
+                                   data-feather-size="45"
+                                   data-feather-color="red2-dark"
+                                   data-feather-bg="red2-fade-light">
+                                </i>
+                              </h1>
+                              <h4 class="center-text color-theme">Mrichi Drive</h4>
+                              <p class="under-heading color-highlight center-text font-11 color-highlight">
+                                  Radio Mrichi
+                              </p>
+                          </div>
+                          <div class="caption-bottom">
+                              <p class="bottom-10 opacity-40 font-10 center-text">Tap to Start</p>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+          <div class="caption round-medium">
+              <div class="caption top-10 bottom-0 center-text">
+                  <h2 class="bolder font-18">Entertainment</h2>
+                  <div class="content">
+                    <div class="one-half">
+                      <div onclick="PlayRadio('E9')" data-height="150" class="caption round-medium shadow-large bg-theme bottom-15">
+                            <div class="caption-center">
+                                <h1 class="center-text">
+                                  <i data-feather="play"
+                                     data-feather-line="1"
+                                     data-feather-size="45"
+                                     data-feather-color="red2-dark"
+                                     data-feather-bg="red2-fade-light">
+                                  </i>
+                                </h1>
+                                <h4 class="center-text color-theme">Meethi Mirchi</h4>
+                                <p class="under-heading color-highlight center-text font-11 color-highlight">
+                                    Live Stream
+                                </p>
+                            </div>
+                            <div class="caption-bottom">
+                                <p class="bottom-10 opacity-40 font-10 center-text">Tap to Start</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="one-half last-column">
+                      <div onclick="PlayRadio('E10')" data-height="150" class="caption round-medium shadow-large bg-theme bottom-15">
+                          <div class="caption-center">
+                              <h1 class="center-text">
+                                <i data-feather="play"
+                                   data-feather-line="1"
+                                   data-feather-size="45"
+                                   data-feather-color="red2-dark"
+                                   data-feather-bg="red2-fade-light">
+                                </i>
+                              </h1>
+                              <h4 class="center-text color-theme">Radio Mirchi </h4>
+                              <p class="under-heading color-highlight center-text font-11 color-highlight">
+                                  Live Stream
+                              </p>
+                          </div>
+                          <div class="caption-bottom">
+                              <p class="bottom-10 opacity-40 font-10 center-text">Tap to Start</p>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+       <div class="footer" data-footer-load="menu-footer.html"></div>
+    </div>
+
+
+
+    <div class="menu-hider"></div>
+</div>
+
+
+<script type="text/javascript" src="scripts/jquery.js"></script>
+<script type="text/javascript" src="scripts/plugins.js"></script>
+<script type="text/javascript" src="scripts/app.js"></script>
+<script type="text/javascript" src="scripts/radio.js"></script>
+<script type="text/javascript">
+//send_WalkThrough, send_Dashboard
+checkForUserAuth(true, false);
+//sendUserTo(false, true);
+uiINIT=true;
+</script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+</body>
